@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Dantina';
-    src: url('./Dantina-Lj5y.otf');
+    src: url('/src/assets/Dantina-Lj5y.otf');
 }
 ul, li {
     text-decoration: none;
@@ -18,7 +18,7 @@ ul, li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./food.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/food.jpeg');
     z-index: 0;
   }
 .bg-image{
@@ -169,7 +169,7 @@ ul, li {
                 left: -3%;
                 bottom: 60%;
                 right: 60%;
-                background-image: url("./dots.png");
+                background-image: url("/src/assets/dots.png");
                 background-repeat: repeat;
             }
         }

@@ -1,7 +1,7 @@
 import "./App.scss"
 //import * as bootstrap from 'bootstrap'
 import { useEffect, useRef } from 'react';
-import balloon from './balloon.jpeg';
+import balloon from '/src/assets/balloon.jpeg';
 
 function App() {
 
