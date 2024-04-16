@@ -35,6 +35,10 @@ ul, li {
   height: 100vh;
 }
 
+.fixed-top {
+  animation: fadeInDown 0.5s;
+}
+
 .navbar.stay-top {
   position: absolute;
   left: 0;
@@ -43,11 +47,6 @@ ul, li {
   margin-top: 1.5rem;
   z-index: 1;
 }
-
-.fixed-top {
-  animation: fadeInDown 0.5s;
-}
-
 .navbar .navbar-brand {
   margin-left: 1rem;
 }
