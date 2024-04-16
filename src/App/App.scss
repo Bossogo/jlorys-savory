@@ -8,7 +8,6 @@ ul, li {
   }
   
 .bg-image::before {
-    
     position: fixed;
     content: "";
     top:0;
@@ -21,6 +20,13 @@ ul, li {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/food.jpeg');
     z-index: 0;
   }
+
+@media (max-width: 768px){
+  .bg-image::before {
+      position: absolute;
+  }
+}
+
 .bg-image{
   height: 100vh;
 }
