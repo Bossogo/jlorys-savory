@@ -39,7 +39,7 @@ function App() {
             <span className="display-3">J</span>lory 
           </span>
           <br/>
-          <span className="fs-200" style={{position: 'absolute', right: 0}}> Savory</span>
+          <span className="sub-text fs-200"> Savory</span>
         </p></a>
 
         <button className="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,13 +48,13 @@ function App() {
         <div className=" navbar-collapse justify-content-end collapse" id="navbarCollapse">
           <ul className="navbar-nav align-items-center me-lg-4 me-md-2">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <a className="nav-link active" aria-current="page" href="./">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About Us</a>
+              <a className="nav-link" href="./">About Us</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link ">Contact Us</a>
+              <a className="nav-link " href>Contact Us</a>
             </li>
           </ul>
         </div>
@@ -81,7 +81,7 @@ function App() {
     <section className="about cover">
       <div className='container-fluid h-100'>
         <div className='row h-100 m-0'>
-          <div className='col col-md-6'>
+          <div className='col offset-2 offset-md-0 col-8 col-md-6'>
             <div className='section-subtitle'>About Us</div>
             <div className='section-heading'>Jlory <span>Savory</span>
             </div>
@@ -108,13 +108,13 @@ We pride ourselves on our professionalism and accountability. Let us help make y
 
             <button
               type="button"
-              class="btn btn-outline-dark btn-lg "
+              class="btn btn-outline-dark btn-lg d-none d-md-block"
             >
               Find out more
             </button>
             
           </div>
-          <div className='col col-md-5 offset-md-1'>
+          <div className='col offset-2 col-8 mt-3 mt-md-0 col-md-5 offset-md-1'>
             <div className='about-img'>
               <div className='img'>
                 <img className='img-fluid' src={balloon} alt = ""/>
