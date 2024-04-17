@@ -1,15 +1,14 @@
-import "./App.scss"
-//import * as bootstrap from 'bootstrap'
+import "./App.scss";
 import { useEffect, useRef } from 'react';
 import balloon from '/src/assets/balloon.jpeg';
 
 function App() {
 
-  const navBar = useRef<HTMLDivElement>(null)
+  const navBar = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleScroll = () => {
       const navbar = navBar.current;
-      console.log(navBar.current)
+      
       if (navbar) {
         if (window.scrollY > 140) {
           navbar.classList.add('bg-black');
@@ -49,20 +48,20 @@ function App() {
         <div className=" navbar-collapse justify-content-end collapse" id="navbarCollapse">
           <ul className="navbar-nav align-items-center me-lg-4 me-md-2">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="./">Home</a>
+              <a className="nav-link" href="#section1">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="./">About Us</a>
+              <a className="nav-link" href="#section2">About Us</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="./">Contact Us</a>
+              <a className="nav-link " href="#section3">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div className="container-fluid bg-image p-0" >
+    <div className="container-fluid bg-image p-0" id="section1">
       <div className="container h-100">
         <div className="row h-100">
           <div className="col-md-6">
@@ -79,8 +78,8 @@ function App() {
     </div>
 
     {/* <!-- About Us --> */}
-    <section className="about cover">
-      <div className='container-fluid h-100'>
+    <section className="about cover" >
+      <div className='container-fluid h-100' id="section2">
         <div className='row h-100 m-0'>
           <div className='col offset-2 offset-md-0 col-8 col-md-6'>
             <div className='section-subtitle'>About Us</div>
@@ -124,6 +123,10 @@ We pride ourselves on our professionalism and accountability. Let us help make y
           </div>
         </div>  
       </div>
+    </section>
+
+    <section className="contact" id="section3">
+
     </section>
   </>
   );
