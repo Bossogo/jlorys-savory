@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+      '~react-slick': path.resolve(__dirname, 'node_modules/react-slick'),
     },
   },
   server: {

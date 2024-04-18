@@ -1,3 +1,9 @@
+// Custom.scss
+:root {
+    --bs-body-bg: #000; /* Black background */
+  }
+  
+  
 body{
     position:relative;
 }
@@ -32,6 +38,7 @@ ul, li {
   .bg-image::before {
       position: absolute;
   }
+  
 }
 
 .bg-image{
@@ -53,7 +60,11 @@ ul, li {
     z-index: 1;
     }
     .navbar-brand{
-        margin-left: 1rem;
+        font-family: 'Brush Script', cursive;
+        color: palegoldenrod;
+        p{
+            position: relative;
+        }
         span.display-5{
             line-height: 1;
             span{
@@ -68,15 +79,33 @@ ul, li {
 
     .nav-link{
         font-family: serif;
+        text-align: center;
         &:active{
             color: #C08446;
         }
     }
 }
   
+.navbar-toggler{
+    border: none;
+    background-color: transparent;
+    .navbar-toggler-icon{
+        
+    }
+}
+.offcanvas{
+    background-color: black !important;
+    .offcanvas-header{
+        justify-content: center;
+        button{
+            position: absolute;
+            right: 1rem;
+        }
+    }
+}
   
   
-  .desc{
+.desc{
     background-color: #fff;
     position: absolute;
     bottom: 40px;
@@ -85,21 +114,19 @@ ul, li {
         line-height: 0.7;
         letter-spacing: 0.1rem;
         font-family: ui-san-serif;
-      }
+        }
     h1{
     font-size: 32px;
     }    
-  }
+}
   
 
 .cover{
     min-width: 100vw;
-    
     width: 100vw;
 }
 
 .about.cover{
-    padding: 120px 0;
     background-color: #eee;
     position: relative;
     .row{
@@ -155,6 +182,17 @@ ul, li {
         .btn{
             font-size:medium;
             border-radius: 2rem;
+            padding: 15px 32px;
+            &:hover :first-child{
+                color:#fff;
+            }
+            a{
+                color: #000;
+                text-decoration: none;
+                span{
+                    
+                }
+            }
         }
 
         .about-img{
@@ -193,6 +231,83 @@ ul, li {
     }
 }
 
+.section-padding{
+    padding: 120px 0;
+}
+.service.cover{
+    position: relative;
+    background-color: #C08446;
+    z-index: 1;
+    .slider{
+        .slick-slide{
+            padding: 0 15px;
+        }
+        .card{
+            overflow: hidden;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/food.jpeg');
+            transition: .2s ease-in transform;
+            &::before{
+                content: "";
+                position: absolute;
+                background: rgba(0, 0, 0, 0.5);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: 0.2s ease-out;
+                z-index: 2;
+            }
+
+            &-img {
+                transition: .3s ease-in-out transform;
+               
+            }
+            
+            .card-line{
+                background-color: #fff;
+                width: 50px;
+                height: 1px;
+                margin: 1.5rem 0;
+                transition: width 0.9s;
+            }
+
+            .card-body{
+                transition: 0.2s ease-in-out;
+                position:relative; 
+                transform: translateY(3rem); 
+                z-index: 2;
+            }
+            .card-hidden-text{
+                position:absolute;
+            }
+            &:hover{
+                .card-img{
+                    transform: scale(1.1);
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.7);
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transform: scale(1.1);
+                }
+                .card-line{
+                    animation-name: expands;
+                    animation-duration: 0.5s;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: forwards;
+                }
+
+                .card-body{
+                    transform: translateY(-1.5rem);
+                }
+            }
+        }
+    }
+}
 @keyframes fadeInDown {
     0%{
         opacity: 0;
@@ -203,6 +318,13 @@ ul, li {
         transform: translateY(0);
     }
 }
-
+@keyframes expands {
+    0%{
+        width: 50px;
+    }
+    100%{
+        width:90%;
+    }
+}
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
