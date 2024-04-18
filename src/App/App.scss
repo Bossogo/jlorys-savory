@@ -34,12 +34,7 @@ ul, li {
     z-index: 0;
   }
 
-@media (max-width: 768px){
-  .bg-image::before {
-      position: absolute;
-  }
-  
-}
+
 
 .bg-image{
   height: 100vh;
@@ -86,13 +81,13 @@ ul, li {
     }
 }
   
-.navbar-toggler{
-    border: none;
-    background-color: transparent;
-    .navbar-toggler-icon{
+// .navbar-toggler{
+//     border: none;
+//     background-color: transparent;
+//     .navbar-toggler-icon{
         
-    }
-}
+//     }
+// }
 .offcanvas{
     background-color: black !important;
     .offcanvas-header{
@@ -189,9 +184,6 @@ ul, li {
             a{
                 color: #000;
                 text-decoration: none;
-                span{
-                    
-                }
             }
         }
 
@@ -265,7 +257,7 @@ ul, li {
             
             .card-line{
                 background-color: #fff;
-                width: 50px;
+                width: 40%;
                 height: 1px;
                 margin: 1.5rem 0;
                 transition: width 0.9s;
@@ -276,6 +268,16 @@ ul, li {
                 position:relative; 
                 transform: translateY(3rem); 
                 z-index: 2;
+                .card-title{
+                    font-size: 1.5rem;
+                    font-family: 'Playfair Display', sans-serif;
+                    word-spacing: 5px;
+                    color: #fff;
+                    span{
+                        font-family: 'Dantina', cursive;
+                    
+                    }
+                }
             }
             .card-hidden-text{
                 position:absolute;
@@ -320,11 +322,30 @@ ul, li {
 }
 @keyframes expands {
     0%{
-        width: 50px;
+        width: 30%;
     }
     100%{
-        width:90%;
+        width:95%;
     }
 }
+
+
+@media (max-width: 768px){
+    .bg-image::before {
+        position: absolute;
+    }
+    .card{
+        .card-body{
+            .card-title{
+                font-size: 2rem !important;
+                word-spacing: 1rem !important;
+            }
+            .card-line{
+                width: 100px;
+            }
+        }
+    }
+  }
+
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
