@@ -1,8 +1,13 @@
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+
 export function Home() {
-  return (<div className="container-fluid bg-image p-0" id="home">
-    <div className="container h-100">
-      <div className="row h-100">
-        <div className="col-md-6">
+  return (
+  <Container fluid className="bg-image p-0" id="home">
+    <Container className="h-100">
+      <Row className="h-100">
+        <Col md={6}>
           <div className='position-relative h-100'>
             <div className="desc w-100 p-3 pt-4 px-sm-4">
               <h5 className='ms-1'>Jlory Savory</h5>
@@ -10,8 +15,8 @@ export function Home() {
               <p>Top tier event management as well as cuisine for any almost type of event</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>);
+        </Col>
+      </Row>
+    </Container>
+  </Container>);
 }

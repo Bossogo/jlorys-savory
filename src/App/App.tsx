@@ -52,9 +52,11 @@ function App() {
       </section>
 
       {/* <!-- Contact Us --> */}
-      <section className="contact cover section-padding">
+      <section className="contact cover">
         <Contact />
       </section>
+
+      
     </>
   );
 }

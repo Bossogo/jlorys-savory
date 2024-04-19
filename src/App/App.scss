@@ -30,7 +30,8 @@ ul, li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/food.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/food_packs.jpg');
+    background-position-y: 25%;
     z-index: 0;
   }
 
@@ -233,6 +234,9 @@ ul, li {
     .slider{
         .slick-slide{
             padding: 0 15px;
+            img{
+                object-fit: cover;
+            }
         }
         .card{
             overflow: hidden;
@@ -310,6 +314,51 @@ ul, li {
         }
     }
 }
+
+.contact.cover{
+    background-color: #C08446;
+    position: relative;
+    z-index: 1;
+    
+    .contact-form{
+        .form-group{
+            label{
+                color: #fff;
+            }
+            input{
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                &:focus{
+                    border-bottom: 1px solid #C08446;
+                }
+            }
+            textarea{
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                &:focus{
+                    border-bottom: 1px solid #C08446;
+                }
+            }
+        }
+        .btn{
+            font-size:medium;
+            border-radius: 2rem;
+            padding: 15px 32px;
+            &:hover :first-child{
+                color:#fff;
+            }
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 @keyframes fadeInDown {
     0%{
         opacity: 0;
@@ -333,6 +382,7 @@ ul, li {
 @media (max-width: 768px){
     .bg-image::before {
         position: absolute;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/food.jpeg');
     }
     .card{
         .card-body{
@@ -342,7 +392,39 @@ ul, li {
             }
         }
     }
-  }
+}
+
+//X-larger screens
+@media (max-width: 1920px) {
+    .service.cover .slider .slick-slide img {
+        height: 500px;
+    }
+}
+//larger screens
+@media (max-width: 1440px){
+    .service.cover .slider .slick-slide img {
+        height: 450px;
+    }
+}
+//laptop screen
+@media (max-width: 1024px){
+    .service.cover .slider .slick-slide img {
+        height: 350px;
+        
+    }
+}
+//tablet screen
+@media (max-width: 768px){
+    .service.cover .slider .slick-slide img {
+        height: 395px;
+    }
+}
+//mobile screen
+@media (max-width: 480px){
+    .service.cover .slider .slick-slide img {
+        height: 450px;
+    }
+}
 
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";

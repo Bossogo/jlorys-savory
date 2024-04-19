@@ -1,4 +1,4 @@
-import balloon from '/src/assets/balloon.jpeg';
+import balloon from '/src/assets/about_image.jpeg';
 
 export function About() {
   return (<div className='container' id="about">
@@ -15,13 +15,13 @@ export function About() {
           <li>
             <div className="about-list-icon"> <span className="ti-check"></span> </div>
             <div className="about-list-text">
-              <p>5 Years of Experience</p>
+              <p>14 Years of Experience</p>
             </div>
           </li>
           <li>
             <div className="about-list-icon"> <span className="ti-check"></span> </div>
             <div className="about-list-text">
-              <p>30+ Events Planned</p>
+              <p>Over A Thousand Events Planned</p>
             </div>
           </li>
         </ul>
