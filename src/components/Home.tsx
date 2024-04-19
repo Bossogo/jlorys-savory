@@ -1,8 +1,8 @@
-import { Container } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-export function Home() {
+export default function Home() {
   return (
   <Container fluid className="bg-image p-0" id="home">
     <Container className="h-100">

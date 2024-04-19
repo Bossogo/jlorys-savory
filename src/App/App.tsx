@@ -1,9 +1,9 @@
 import "./App.scss";
 import { useEffect, useRef } from 'react';
-import { Contact } from "../components/Contact";
-import { Home } from "../components/Home";
-import { About } from "../components/About";
-import { Navigation } from "../components/Navigation";
+import Contact from "../components/Contact";
+import Home from "../components/Home";
+import About from "../components/About";
+import Navigation from "../components/Navigation";
 import Services from "../components/Services";
 
 function App() {

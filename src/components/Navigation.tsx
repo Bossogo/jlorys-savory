@@ -5,7 +5,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 type Props = {navBar: React.RefObject<HTMLElement> | undefined}
 
-export function Navigation({navBar}: Props) {
+export default function Navigation({navBar}: Props) {
   return (
     <Navbar collapseOnSelect data-bs-theme="dark" expand="md" ref={navBar} className='ps-lg-5 pe-lg-5 stay-top'>
       <Container fluid>

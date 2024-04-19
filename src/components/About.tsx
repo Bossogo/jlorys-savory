@@ -1,6 +1,6 @@
 import balloon from '/src/assets/about_image.jpeg';
 
-export function About() {
+export default function About() {
   return (<div className='container' id="about">
     <div className='row h-100 m-0'>
       <div className='col col-12 col-md-6'>

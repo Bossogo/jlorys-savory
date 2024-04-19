@@ -1,6 +1,8 @@
-import { Col, Container, Row } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
-export function Contact() {
+export default function Contact() {
   return (
     <Container fluid className='bg-black' id="contact">
       <Row>
