@@ -316,47 +316,9 @@ ul, li {
 }
 
 .contact.cover{
-    background-color: #C08446;
+    background-color: #020202;
     position: relative;
     z-index: 1;
-    
-    .contact-form{
-        .form-group{
-            label{
-                color: #fff;
-            }
-            input{
-                background-color: transparent;
-                border: none;
-                border-bottom: 1px solid #fff;
-                color: #fff;
-                &:focus{
-                    border-bottom: 1px solid #C08446;
-                }
-            }
-            textarea{
-                background-color: transparent;
-                border: none;
-                border-bottom: 1px solid #fff;
-                color: #fff;
-                &:focus{
-                    border-bottom: 1px solid #C08446;
-                }
-            }
-        }
-        .btn{
-            font-size:medium;
-            border-radius: 2rem;
-            padding: 15px 32px;
-            &:hover :first-child{
-                color:#fff;
-            }
-            a{
-                color: #000;
-                text-decoration: none;
-            }
-        }
-    }
 }
 
 @keyframes fadeInDown {

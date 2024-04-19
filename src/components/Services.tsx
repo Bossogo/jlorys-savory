@@ -3,6 +3,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from "react-bootstrap/Card";
 import Container from 'react-bootstrap/Container';
+import foodImage from "/src/assets/food.jpeg";
+import food2Image from "/src/assets/food_2.jpeg";
+import cakeImage from "/src/assets/cake.jpeg";
+import smallChopsImage from "/src/assets/small_chops.jpg";
+import foodPacksImage from "/src/assets/food_packs.jpg";
+import eventImage from "/src/assets/event.jpg";
 
 const Services = () => {
     const settings = {
@@ -46,7 +52,7 @@ const Services = () => {
     <Container id="service">
         <Slider {...settings}>
             <Card className="slider-item bg-black text-white">
-                <Card.Img src="/src/assets/food.jpeg" className="card-img"/>
+                <Card.Img src={foodImage} className="card-img"/>
                 <Card.ImgOverlay className="align-content-end">
                     <Card.Body>
                         <Card.Title className="card-title">Party <span>Foods</span></Card.Title>
@@ -56,7 +62,7 @@ const Services = () => {
                 </Card.ImgOverlay>
             </Card>
             <Card className="slider-item bg-black text-white">
-                <Card.Img src="/src/assets/food_2.jpeg" className="card-img"/>
+                <Card.Img src={food2Image} className="card-img"/>
                 <Card.ImgOverlay className="align-content-end">
                     <Card.Body>
                         <Card.Title className="card-title">Tasty <span>Delicacies</span></Card.Title>
@@ -66,7 +72,7 @@ const Services = () => {
                 </Card.ImgOverlay>
             </Card>
             <Card className="slider-item bg-black text-white">
-                <Card.Img src="/src/assets/cake.jpeg" className="card-img"/>
+                <Card.Img src={cakeImage} className="card-img"/>
                 <Card.ImgOverlay className="align-content-end">
                     <Card.Body>
                         <Card.Title className="card-title">Deluxe <span>Cakes</span></Card.Title>
@@ -76,7 +82,7 @@ const Services = () => {
                 </Card.ImgOverlay>
             </Card>
             <Card className="slider-item bg-black text-white">
-                <Card.Img src="/src/assets/small_chops.jpg" className="card-img"/>
+                <Card.Img src={smallChopsImage} className="card-img"/>
                 <Card.ImgOverlay className="align-content-end">
                     <Card.Body>
                         <Card.Title className="card-title">Small <span>Chops</span></Card.Title>
@@ -86,7 +92,7 @@ const Services = () => {
                 </Card.ImgOverlay>
             </Card>
             <Card className="slider-item bg-black text-white">
-                <Card.Img src="/src/assets/food_packs.jpg" className="card-img"/>
+                <Card.Img src={foodPacksImage} className="card-img"/>
                 <Card.ImgOverlay className="align-content-end">
                     <Card.Body>
                         <Card.Title className="card-title">Event <span>Planning</span></Card.Title>
@@ -96,7 +102,7 @@ const Services = () => {
                 </Card.ImgOverlay>
             </Card>
             <Card className="slider-item bg-black text-white">
-                <Card.Img src="/src/assets/event.jpg" className="card-img"/>
+                <Card.Img src={eventImage} className="card-img"/>
                 <Card.ImgOverlay className="align-content-end">
                     <Card.Body>
                         <Card.Title className="card-title">Event <span>Management</span></Card.Title>
